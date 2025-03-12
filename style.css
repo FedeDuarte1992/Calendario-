@@ -1,0 +1,77 @@
+body {
+    margin: auto;
+    text-align: center;
+    align-items: center;
+
+}
+
+main {
+    padding-top: 10%;
+    margin: auto;
+    width: 30%;
+    height: 30%;
+
+}
+h1{
+margin-left: 5%;
+}
+#Calendario {
+    margin-left: 5%;
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#fecha {
+    width: 70%;
+    text-align: center;
+
+}
+
+#dia {
+    padding-left: 0%;
+    width: auto;
+    text-align: center;
+}
+
+#dia ol {
+    padding-left: 5%;
+    padding-right: 5%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.letra-dia{
+    background-color: gray;
+ 
+}
+
+#semana {
+    padding-left: 0%;
+    width: auto;
+    text-align: center;
+
+}
+
+#semana ol {
+    
+    padding-left: 5%;
+    padding-right: 5%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+#semana li {
+    border: 1px solid black;
+    padding: auto;
+    margin: 1px;
+    border-radius: 5%;
+}
+
+.primer-dia {
+    grid-column-start: 6;
+}
+
+
