@@ -1,77 +1,86 @@
 body {
-    margin: auto;
+    margin: 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-
+    justify-content: center;
+    min-height: 100vh; /* Asegura que el body ocupe al menos el 100% del viewport */
+    font-family: Arial, sans-serif;
 }
 
 main {
-    padding-top: 10%;
-    margin: auto;
-    width: 30%;
-    height: 30%;
+    width: 90%; /* Ajusta el ancho según sea necesario */
+    max-width: 400px; /* Limita el ancho máximo */
+    margin: 20px auto; /* Centra el main */
+}
+
+h1 {
+    text-align: center;
+    margin: 0 0 20px 0; /* Ajusta el margen inferior */
+}
+#mes{
+    font-size: larger;
+    text-align: center;
+    margin: 10px 0 10px 0; 
 
 }
-h1{
-margin-left: 5%;
-}
+
 #Calendario {
-    margin-left: 5%;
-    width: 300px;
-    height: 200px;
+    width: 100%; /* Ocupa el 100% del ancho del main */
     border: 2px solid black;
     border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box; /* Incluye el padding en el ancho */
 }
 
 #fecha {
-    width: 70%;
+    width: 100%;
     text-align: center;
-
+    margin-bottom: 10px;
 }
 
-#dia {
-    padding-left: 0%;
-    width: auto;
+#dia, #semana {
+    width: 100%;
     text-align: center;
 }
 
 #dia ol {
-    padding-left: 5%;
-    padding-right: 5%;
+    
+    height: 25px;
     list-style: none;
+    padding: 5px;
+    margin: 0 0 15px 0; /* Añade margen inferior para separar los días de la semana */
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-}
-
-.letra-dia{
-    background-color: gray;
- 
-}
-
-#semana {
-    padding-left: 0%;
-    width: auto;
-    text-align: center;
-
+    gap: 5px; /* Espacio entre celdas */
 }
 
 #semana ol {
-    
-    padding-left: 5%;
-    padding-right: 5%;
     list-style: none;
+    padding: 5px;
+    margin: 0;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    gap: 5px; /* Espacio entre celdas */
 }
+
 #semana li {
     border: 1px solid black;
-    padding: auto;
-    margin: 1px;
-    border-radius: 5%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.letra-dia {
+    padding: 5px;
+    border-top: 10px;
+    background-color: gray;
+    font-weight: bold;
+    color: white; /* Mejora la legibilidad del texto */
+    border-radius: 5px; /* Añade bordes redondeados */
 }
 
 .primer-dia {
-    grid-column-start: 6;
+    grid-column-start: 6; /* Ajusta según el día de la semana */
 }
-
-
